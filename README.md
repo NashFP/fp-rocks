@@ -25,12 +25,24 @@ From [Wikipedia](https://en.wikipedia.org/wiki/RocksDB)...
 
 ### Official website
 
-[https://rocksdb.org/](https://rocksdb.org/)
+From the official website at [https://rocksdb.org/](https://rocksdb.org/)...
+
+> **High Performance**:
+> RocksDB uses a log structured database engine, written entirely in C++, for maximum performance. Keys and values are just arbitrarily-sized byte streams.
+
+> **Optimized for Fast Storage**: 
+> RocksDB is optimized for fast, low latency storage such as flash drives and high-speed disk drives. RocksDB exploits the full potential of high read/write rates offered by flash or RAM.
+
+> **Adaptable**: 
+> RocksDB is adaptable to different workloads. From database storage engines such as MyRocks to application data caching to embedded workloads, RocksDB can be used for a variety of data needs.
+
+> **Basic and Advanced Database Operations**: 
+> RocksDB provides basic operations such as opening and closing a database, reading and writing to more advanced operations such as merging and compaction filters.
 
 
 ## Ideas
 
-* Create an Elixir (or Erlang) project that lazily persists ETS takes to disk (similar to [persistent_ets](https://github.com/michalmuskala/persistent_ets)), but use RocksDB as the backing store.
+* Create an Elixir (or Erlang) project that lazily persists ETS tables to disk (similar to [persistent_ets](https://github.com/michalmuskala/persistent_ets)), but use RocksDB as the backing store.
 * ... more ideas please ....
 
 
